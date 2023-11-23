@@ -7,7 +7,7 @@ fetch('../../jsons/first-phase-books.json')
     for (let i = 0; i < data.length; i++) {
         booksParent.innerHTML += `
         <li><a href="${data[i].link}">${data[i].book}</a></li>
-        `
-    }
+        `;
+    };
 
-})
+});
