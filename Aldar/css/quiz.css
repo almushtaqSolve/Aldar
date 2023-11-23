@@ -1,0 +1,53 @@
+@import url('global.css');
+
+.quiz {
+    background-color: #ffffff;
+}
+
+.chooses li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    padding: 30px;
+    border-radius: 6px;
+    background-color: var(--blue-color);
+    /* color: var(--blue-color) !important;
+    border: 1px solid var(--blue-color) !important; */
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.chooses li:active {
+    opacity: 0.8;
+}
+
+.quiz .status {
+    margin-top: -15px;
+    width: 320px;
+    text-align: center;
+}
+.moving-btns button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: var(--blue-color);
+    font-weight: 800;
+    color: var(--white-color);
+    border: none;
+    outline: none;
+}
+
+.correct-status {
+    color: var(--green-color);
+}
+.wrong-status {
+    color: var(--red-color);
+}
