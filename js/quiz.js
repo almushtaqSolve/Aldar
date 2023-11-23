@@ -35,6 +35,7 @@ subjectsBtns.forEach((btn) => {
                         statusEl.innerHTML = 'صحيح';
                         statusEl.classList.add('correct-status')
                     } else {
+                        document.querySelector(`[data-letter="${data[0]["answer"]}"]`).style.cssText = 'background-color: var(--green-color)';
 
                         choosesField.forEach((btn) => {
                             btn.classList.add('disabled');
@@ -42,12 +43,14 @@ subjectsBtns.forEach((btn) => {
 
                         choosesField[i].classList.remove('disabled')
                         choosesField[i].style.cssText = `
-
                             background-color: var(--red-color);
                         `;
 
+
                         statusEl.innerHTML = 'خطأ';
-                        statusEl.classList.add('wrong-status')
+                        statusEl.classList.add('wrong-status');
+
+
 
                     }
                 })
